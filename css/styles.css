@@ -1,0 +1,424 @@
+body {
+    text-align: center;
+    /* Push content below fixed navbar */
+}
+/* title-section */
+#title {
+    padding-top: 2rem;
+    padding-bottom: 14rem;
+
+}
+/* Mobile & Tablet */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 0.75rem 1.2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 0.3rem 0;
+  }
+
+  .navbar-toggler {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+.common-bg {
+  position: relative;
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  /* overlay */
+    url("../images/MuchaTseBle.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional parallax feel */
+}
+.about-me {
+    color: #fff;
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    line-height: 0.2;
+    margin-top: 3rem;
+}
+.about-me h2 {
+  font-weight: 3rem;
+  font-size: clamp(2.5rem, 6vw, 3rem);
+  margin-bottom: 2rem;
+}
+.title-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* NAVBAR */
+.custom-nav {
+  background-color: #060771;
+}
+.nav-list {
+  text-align: left;
+}
+
+
+/* HERO CONTENT */
+.hero-content {
+  margin-top: 60px;
+}
+/* TEXT BOX */
+.text-box {
+  max-width: 700px;
+  margin: 0 auto 5rem;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  max-width: 800px;
+  line-height: 1.2;
+}
+@media (max-width: 576px) {
+  .text-box {
+    padding: 20px;
+    margin-bottom: 3rem;
+  }
+}
+.text-box h3 {
+  font-weight: 500;
+  color: #555;
+}
+/* PROFILE IMAGE POP-IN */
+.profile-img {
+  width: clamp(150px, 40vw, 230px);
+  height: clamp(150px, 40vw, 230px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #FFf;
+  margin-bottom: 2rem;
+  animation: popIn 1s ease forwards;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* education */
+#education {
+    color: #fff;
+    padding-top: 5rem;
+}
+.schools {
+    color: #1a1a1a;
+    background: #fff;
+    padding: 0.9rem;
+    border-radius: 10px;
+}
+@media (max-width: 576px) {
+  .schools {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+.logo {
+    text-align: center;
+    margin: 0 auto 9.5rem;
+}
+.logo1 {
+    margin: 0 auto 12rem;
+}
+.logo2 {
+    margin: 0 auto 12rem;
+}
+@media (max-width: 576px) {
+  .logo1 {
+    margin: 0 auto 13.5rem;
+  }
+}
+.school-heading {
+    margin: 2rem 0 7rem;
+
+}
+.schools-button {
+    margin-top: 4rem;
+}
+.cedec {
+    margin-bottom: 3rem;
+}
+.unn {
+    margin-bottom: 3rem;
+}
+/* skill-section */
+#skills {
+    background-color: #fff;
+}
+.skill-buttons {
+    text-align: center;
+    color: #fff;  
+}
+@media (max-width: 576px) {
+  .skills-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+.skill-card {
+  background: #000;
+  padding: 1.9rem;
+  margin: 0.95rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px #060771;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.6s ease;
+  color: #fff;
+}
+/* skill-card */
+.skill-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.skills-section {
+  padding: 120px 0;          /* makes section taller */
+  background-color: #f8f9fa; /* light background */
+}
+.skill-head {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 1rem 0 2rem;
+}
+.skills-button {
+  padding: 18px 0;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+@media (max-width: 576px) {
+  .skills-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+/* contact */
+.footer-section {
+  padding: 80px 0;
+  background-color: #060771;
+  color: #ffffff;
+}
+
+.footer-head {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.footer-text {
+  color: #d1d1d1;
+  font-size: 1rem;
+}
+
+/* ICONS */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.social-icon {
+  font-size: 2.8rem; /* ICON SIZE */
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  color: #000;
+}
+/* WEB DESIGN */
+ #web {
+  padding-top: 5rem;
+ }
+.web-body {
+  margin: 0;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../images/Dark\ Futuristic\ Tech\ Wallpaper\ _\ Glowing\ HUD\ Grid\ &\ Digital\ Particle\ Design.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional parallax feel */
+}
+ .web-text {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-bottom: 8rem;
+  padding-top: clamp(2rem, 5vw, 3.5rem);
+ }
+ .paragraph {
+  color: #fff;
+ }
+ .first {
+  font-size: clamp(3.5rem, 10vw, 6rem);
+ }
+.web-card {
+  background: #fff;
+ }
+.bootstrap {
+  text-align: center;
+  margin-top: 3rem; 
+}
+.java {
+  text-align: center;
+  margin-top: 1rem;
+}
+.iconz {
+  text-align: center;
+  margin: 3rem 1rem;
+}
+#projects {
+  padding: 7rem 0 2rem;
+} 
+.web-projects {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 3rem;
+  margin-bottom: 3rem;
+}
+.web-projects-text {
+  color: #fff;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-weight: 1.5rem;
+}
+.canva-text {
+  text-align: center;
+}
+.canva-img {
+  margin: 3rem auto;
+  text-align: center;
+}
+#graphics {
+  padding: 10rem 0;
+}
+.canva-card {
+  /* border-radius: 20%;  */
+  margin-left: 2rem;
+  margin-top: 0;
+  border: 5px solid #0046ff;
+  width: 380px;     /* default for small screens */
+  max-width: 100%;
+  height: auto;
+}  
+@media (min-width: 768px) {   /* tablets */
+  .canva-card {
+    width: 430px;
+  }
+}
+
+@media (min-width: 992px) {   /* laptops */
+  .canva-card {
+    width: 480px;
+  }
+}
+.c-con {
+  margin-top: 0;
+}
+.graphics-body {
+  padding: 0;
+}
+.graphics-card {
+  margin: 3rem 2rem 3rem;
+}
+@media (max-width: 576px) {
+  .graphics-card {
+    margin: 2rem 0;
+  }
+}
+#graphics h1 {
+  color: #060771;
+  text-align: left;
+  margin: 1rem 2rem 0rem;
+  font-weight: 3rem;
+  font-size: clamp(2.5rem, 6vw, 5rem); 
+  text-shadow:
+    -3px -3px 0 #fff,
+     3px -3px 0 #fff,
+    -3px  3px 0 #fff,
+     3px  3px 0 #fff;
+}
+#graphics-projects {
+  background-color: #fff;
+}
+#graphics {
+  min-height: 100vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("../images/graphics.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.g-cardbody {
+  background-color: #060771;
+  color: #fff;
+}
+#graphics-projects h3 {
+  color: #000;
+  margin: 5rem auto 2rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 3rem;
+   text-shadow: 2px 2px 6px #060771;
+}
+/* MOBILE */
+@media (max-width: 576px) {
+  body {
+    text-align: center;
+  }
+
+  .about-me {
+    font-size: 1rem;
+  }
+
+  .web-text {
+    font-size: 1.1rem;
+    padding-bottom: 4rem;
+  }
+
+  .iconz {
+    margin: 2rem 0;
+  }
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+  .hero-content {
+    margin-top: 80px;
+  }
+
+  #education {
+    padding-top: 3rem;
+  }
+}
+
+
+
+
+
